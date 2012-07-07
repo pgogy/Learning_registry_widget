@@ -84,12 +84,11 @@ class learning_registry_search extends WP_Widget_RSS {
 	
 	function update($new_instance, $old_instance) {
 	
-		file_put_contents("c:\\cheese_" . time() . ".txt",serialize($old_instance));
-	
 		$instance = $old_instance;		
 		$instance['node'] = $new_instance['node'];
 		$instance['number_items'] = $new_instance['number_items'];	
 		return $instance;
+		
 	}
 	
 }
