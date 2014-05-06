@@ -2,14 +2,17 @@
 Contributors: pgogy
 Tags: learning, education, content, widget
 Requires at least: 3
-Tested up to: 3.3
-Stable tag: 0.11
+Tested up to: 3.9
+Stable tag: 0.3
 
 This plugin is built for people keen to display content from a learning registry (node) on their WordPress site.
 
 == Description ==
 This plugin was developed for the learning registry (http://www.learningregistry.org) and should work on any learning registry node.
 
+Please look for support at http://www.pgogy.com and http://www.pgogy.com/code/groups/wordpress/learning-registry-display-widget/
+
+[vimeo https://vimeo.com/60041477]
 
 == Installation ==
 
@@ -18,13 +21,19 @@ This plugin was developed for the learning registry (http://www.learningregistry
 
 == Frequently Asked Questions ==
 
-No Questions have been asked yet. Please report issues at https://github.com/patlockley/Learning_registry_widget
+No Questions have been asked yet. Please report issues at http://www.pgogy.com/code/groups/wordpress/learning-registry-display-widget/
 
 Happy to hear suggestions for features
 
 == Screenshots ==
 
+1. The widget on the "Appearance | Widgets" page
+2. Setting up the widget
+
 == Changelog ==
+
+= 0.3 = 
+Updated for 3.9
 
 = 0.11 =
 Slight bug fixes / code resiliancy

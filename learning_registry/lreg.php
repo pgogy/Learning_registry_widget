@@ -3,9 +3,9 @@
 /*
 Plugin Name: Learning Registry Display Widget
 Description: Facilitates the display of Learning Registry Content from a node of your choice
-Version: 0.11
+Version: 0.3
 Author: pgogy
-Plugin URI: http://www.pgogy.com/code/learning-registry-widget
+Plugin URI: http://www.pgogy.com/code/groups/wordpress/learning-registry-display-widget/
 Author URI: http://www.pgogy.com
 License: GPL
 */
@@ -36,7 +36,7 @@ function lr_add_scripts(){
 							
 				function(response){
 				
-					alert(response);
+					console.log(response);
 				
 					document.getElementById(div).innerHTML = response;
 								

@@ -18,9 +18,9 @@
 	function lreg_get() {
 	
 		if(strpos($_POST['node_url'],"http")!==FALSE){
-
+		
 			$ch = curl_init();
-			curl_setopt($ch,CURLOPT_URL,$_POST['node_url'] . "slice?any_tags=" . $_POST['term']);
+			curl_setopt($ch,CURLOPT_URL,str_replace("http:", "https:", $_POST['node_url']) . "slice?any_tags=" . $_POST['term']);
 			curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
 			curl_setopt($ch,CURLOPT_MAXREDIRS,10);
 			curl_setopt($ch,CURLOPT_CONNECTTIMEOUT,100);
@@ -29,7 +29,7 @@
 			curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
 			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 			$data = curl_exec($ch);
-						
+			
 			$process = json_decode($data);
 			
 			if($process){
