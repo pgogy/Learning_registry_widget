@@ -2,8 +2,8 @@
 Contributors: pgogy
 Tags: learning, education, content, widget
 Requires at least: 3
-Tested up to: 3.9
-Stable tag: 0.3
+Tested up to: 4.5
+Stable tag: 0.4
 
 This plugin is built for people keen to display content from a learning registry (node) on their WordPress site.
 

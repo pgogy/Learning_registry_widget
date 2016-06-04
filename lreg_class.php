@@ -70,6 +70,14 @@ class learning_registry_search extends WP_Widget_RSS {
 
 	function form($instance) {		
 	
+		if(!isset($instance["number_items"])){
+			$instance["number_items"] = 10;
+		}
+		
+		if(!isset($instance["node"])){
+			$instance["node"] = "sandbox.learningregistry.org";
+		}
+	
 		echo '<div id="learning_registry_search-widget-form">';		
 		echo '<p><label for="' . $this->get_field_id("node") .'">Learning Registry Node:</label>';
 		echo '<input type="text" name="' . $this->get_field_name("node") . '" size="35" '; 
